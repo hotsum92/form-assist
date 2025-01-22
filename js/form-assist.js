@@ -21,9 +21,12 @@ setTimeout(() => {
 
   console.log({ location: window.location.href });
 
-  triggerAttributeEvent(input);
+  // 失敗
+  //triggerAttributeEvent(input);
 
-  //let event = new Event('change');
+  // 失敗
+  // https://github.com/facebook/react/issues/27283
+  //let event = new Event('change', { bubbles: true });
   //input.dispatchEvent(event);
 }, 100);
 
